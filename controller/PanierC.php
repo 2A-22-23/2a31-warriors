@@ -6,7 +6,10 @@
 
 
         function afficherProduit() {
-            $sql = "SELECT * FROM produit ";
+            $sql = "SELECT *
+            FROM panier
+            INNER JOIN commande
+            WHERE panier.idClient = commande.idClient ";
             $db = config::getConnexion();
             try {
                 $query = $db->prepare($sql);
