@@ -11,15 +11,13 @@
             INNER JOIN commande
             WHERE panier.idClient = commande.idClient ";
             $db = config::getConnexion();
-            try {
+            
                 $query = $db->prepare($sql);
                 $query->execute();
 
                  $liste = $query->fetchAll();
                 return $liste;
-            } catch(Exception $e){
-				$e->getMessage();
-			}
+           
         }
 
 
