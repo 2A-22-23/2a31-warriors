@@ -1,6 +1,6 @@
 <?php 
-    require_once "C:/xamppp/htdocs/art&lux/views/config.php";
-    require_once "C:/xamppp/htdocs/art&lux/model/PanierM.php";
+    require_once "C:/xampp/htdocs/art&lux1/views/config.php";
+    require_once "C:/xampp/htdocs/art&lux1/model/PanierM.php";
 
     class PanierC {
 
